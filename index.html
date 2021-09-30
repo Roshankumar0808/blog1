@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog2 | Early Heart Disease Detection using Heart Beat
+        Sensing </title>
+</head>
+<body>
+    <h1> Early Heart Disease Detection using Heart Beat
+        Sensing  </h1>
+        <hr>
+        <h2>Abstract </h2>
+    <p>
+        Heart infections impacts 70m people worldwide where a
+considerable number of individuals don’t have the foggiest idea
+about the signs. In this we will fabricate a model of heart beat
+distinguishing to fathom the condition of the heart by android
+application. In this structure we are completing a heartbeat
+checking and heart sickness (Heart attack) disclosure system
+using the Internet of Things. The sensor is then interfaced to a
+microcontroller that grants checking heart rate readings and
+transmitting them over Internet. . The purpose of this errand is
+that the customer can recognize his heart condition by sitting at
+home.
+<hr>
+        
+        
+          <h2>Introduction</h2>
+         <p>One in each four demise are identified with heart. Heart attack can
+            happen when the progression of blood to heart is blocked.
+            Attributable to late finding of heart attack we are insufficient to
+            spare the lives of numerous people This structure can recognize
+            beat, temperature reliably with the help of sensor. Customer can
+            set the breaking point for all parameters.
+        </p>
+        <hr>
+        <hr>
+        <h2>Introduction to Heartbeat Sensor </h2>
+        <p>Monitoring heart rate is very important for athletes, patients as it
+            determines the condition of the heart (just heart rate). There are many
+            ways to measure heart rate and the most precise one is using an
+            Electrocardiography
+            But the more easy way to monitor the heart rate is to use a Heartbeat
+            Sensor. It comes in different shapes and sizes and allows an instant way
+            to measure the heartbeat.
+            Heartbeat Sensors are available in Wrist Watches (Smart Watches),
+            Smart Phones, chest straps, etc. The heartbeat is measured in beats per
+            minute or bpm, which indicates the number of times the heart is
+            contracting or expanding in a minute.</p>
+            <hr>
+            <hr>
+            <h2>Principle of Heartbeat Sensor</h2>
+            <p>The principle behind the working of the Heartbeat Sensor is
+                Photoplethysmograph. According to this principle, the changes in the
+                volume of blood in an organ is measured by the changes in the intensity
+                of the light passing through that organ.
+                Usually, the source of light in a heartbeat sensor would be an IR LED
+                and the detector would be any Photo Detector like a Photo Diode, an
+                LDR (Light Dependent Resistor) or a Photo Transistor.
+                With these two i.e. a light source and a detector, we can arrange them
+                in two ways: A Transmissive Sensor and a Reflective Sensor.
+                In a Transmissive Sensor, the light source and the detector are place
+                facing each other and the finger of the person must be placed in
+                between the transmitter and receiver.
+                Reflective Sensor, on the other hand, has the light source and the
+                detector adjacent to each other and the finger of the person must be
+                placed in front of the sensor.</p>
+                <hr>
+                <hr>
+                <h2>Components Required</h2>
+                <p>Arduino UNO x 1</p>
+                <p>Heartbeat Sensor</p>
+                <p>Connecting wires</p>
+                <hr>
+                <hr>
+                <p>Required libraries were added to the IDE and the data was
+                    collected from the device and converted to heart beat rate in
+                    format beats per minute. The module was connected to a hotspot
+                    to access the internet and send the data to any remote server
+                    anywhere in the world.</p>
+                    <!-- <hr>
+                    <hr>
+                    <h2>CODE:</h2>
+                    <p>/* Getting_BPM_to_Monitor prints the BPM to the Serial Monitor, using the least
+                        lines of code and PulseSensor Library.
+                        * Tutorial Webpage: https://pulsesensor.com/pages/getting-advanced
+                        *
+                        -Use This Sketch To
+                        1) Displays user's live and changing BPM, Beats Per Minute, in Arduino's nativeSerial
+                        Monitor.
+                        2) Print: " A HeartBeat Happened !" when a beat is detected, live.
+                        2) Learn about using a PulseSensor Library "Object".
+                        4) Blinks LED on PIN 13 with user's Heartbeat.
+                        -*/
+                        #define USE_ARDUINO_INTERRUPTS true // Set-up low-level interrupts for most
+                        acurate BPM math.
+                        #include <PulseSensorPlayground.h> // Includes the PulseSensorPlayground
+                        Library.
+                        // Variables
+                        const int PulseWire = 0; // PulseSensor PURPLE WIRE connected to ANALOG PIN
+                        0
+                        const int LED13 = 13; // The on-board Arduino LED, close to PIN 13.
+                        int Threshold = 550; // Determine which Signal to "count as a beat" and which to
+                        ignore.
+                        // Use the "Gettting Started Project" to fine-tune Threshold Value
+                        beyond default setting.
+                        // Otherwise leave the default "550" value.
+                        PulseSensorPlayground pulseSensor; // Creates an instance of the
+                        PulseSensorPlayground object called "pulseSensor"
+                        void setup() {
+                        Serial.begin(9600); // For Serial Monitor
+                        // Configure the PulseSensor object, by assigning our variables to it.
+                        pulseSensor.analogInput(PulseWire);
+                        pulseSensor.blinkOnPulse(LED13); //auto-magically blink Arduino's LED with
+                        heartbeat.
+                        8
+                        pulseSensor.setThreshold(Threshold);
+                        // Double-check the "pulseSensor" object was created and "began" seeing a signal.
+                        if (pulseSensor.begin()) {
+                        Serial.println("We created a pulseSensor Object !"); //This prints one time at
+                        Arduino power-up, or on Arduino reset.
+                        }
+                        }
+                        void loop() {
+                        int myBPM = pulseSensor.getBeatsPerMinute(); // Calls function on our pulseSensor
+                        object that returns BPM as an "int".
+                        // "myBPM" hold this BPM value now.
+                        if (pulseSensor.sawStartOfBeat()) { // Constantly test to see if "a beathappened".
+                        Serial.println(" A HeartBeat Happened ! "); // If test is "true", print a message "a
+                        heartbeat happened".
+                        Serial.print("BPM: "); // Print phrase "BPM: "
+                        Serial.println(myBPM); // Print the value inside of myBPM.
+                        }
+                        delay(20); // considered best practice in a simple sketch.
+                        }</p> -->
+                    <hr>
+                    <hr>
+                    <h2>Results and Discussion</h2>
+                    <p>After implementation of this project, we can measure the heart
+                        rate of the user taken from the heart beat sensor on our mobile
+                        phone. The advantage of this system is that a person can
+                        measure his/her heartbeat instantly and easily and can know the
+                        value through his phone and is very cheap to its alternatives. A
+                        person can also know the value sitting at a far-off place through
+                        internet.</p>
+                        <hr>
+                        <hr>
+                        <h2>Conclusion</h2>
+                        <p>We were able to achieve our target of displaying heart beat to the
+                            users. The advantage Is easy to use and is a lot less expensive
+                            than its alternatives. Every- thing worked correctly and the
+                            correct value is displayed on the device through internet.</p>
+            
+    </p>
+     <h2> Thank You</h2>
+</body>
+</html>
